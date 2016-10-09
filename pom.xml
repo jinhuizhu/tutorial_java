@@ -13,19 +13,25 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>RELEASE</version>
         </dependency>
         <!--Guava-->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
+            <version>RELEASE</version>
         </dependency>
         <!--jmockit-->
         <dependency>
             <groupId>org.jmockit</groupId>
             <artifactId>jmockit</artifactId>
-            <version>1.28</version>
+            <version>RELEASE</version>
+        </dependency>
+        <!--hamcrest-->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 </project>
