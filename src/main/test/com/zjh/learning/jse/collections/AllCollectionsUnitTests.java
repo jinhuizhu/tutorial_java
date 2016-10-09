@@ -1,6 +1,7 @@
 package com.zjh.learning.jse.collections;
 
 import com.zjh.learning.jse.collections.list.AllListUnitTests;
+import com.zjh.learning.jse.collections.set.AllSetUnitTests;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
@@ -9,7 +10,8 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        AllListUnitTests.class
+        AllListUnitTests.class,
+        AllSetUnitTests.class
 })
 public class AllCollectionsUnitTests {
 }

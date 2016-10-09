@@ -2,7 +2,7 @@ package com.zjh.learning.jse.collections.list;
 
 import org.junit.Test;
 
-import static com.zjh.learning.jse.collections.list.ProductFixtures.*;
+import static com.zjh.learning.jse.collections.ProductFixtures.*;
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
 
