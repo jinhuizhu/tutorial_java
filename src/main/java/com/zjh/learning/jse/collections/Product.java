@@ -15,6 +15,13 @@ public class Product {
     public static final Comparator<Product> BY_WEIGHT = comparing(Product::getWeight);
     public static final Comparator<Product> BY_NAME = comparing(Product::getName);
 
+//    public static final Comparator<Product> BY_WEIGHT = new Comparator<Product>() {
+//        @Override
+//        public int compare(Product o1, Product o2) {
+//            return Integer.compare(o1.getWeight(), o2.getWeight());
+//        }
+//    };
+
     private final String name;
     private final int weight;
 
@@ -38,16 +45,6 @@ public class Product {
                 .add("weight", weight)
                 .toString();
     }
-
-
-//    public static final Comparator<Product> BY_WEIGHT = new Comparator<Product>() {
-//        @Override
-//        public int compare(Product o1, Product o2) {
-//            return Integer.compare(o1.getWeight(), o2.getWeight());
-//        }
-//    };
-
-
 
     @Override
     public boolean equals(Object o) {
