@@ -1,4 +1,4 @@
-package com.zjh.learning.jse.collections.queue.priorityqueue;
+package com.zjh.learning.jse.collections.queue.pq;
 
 import com.zjh.learning.jse.collections.queue.Category;
 import com.zjh.learning.jse.collections.queue.Customer;
