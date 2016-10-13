@@ -22,8 +22,8 @@ public class Product {
 //        }
 //    };
 
-    private final String name;
-    private final int weight;
+    protected final String name;
+    protected final int weight;
 
     public Product(String name, int weight) {
         this.name = name;
