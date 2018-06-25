@@ -1,0 +1,17 @@
+apply plugin: 'java'
+sourceCompatibility = 1.8
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // guava
+    compile group: 'com.google.guava', name: 'guava', version: '25.1-jre'
+
+    // testing
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.jmockit', name: 'jmockit', version: '1.37'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+}
