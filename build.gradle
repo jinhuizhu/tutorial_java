@@ -1,9 +1,15 @@
-apply plugin: 'java'
+plugins {
+    id 'org.springframework.boot' version '2.1.8.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group = 'com.jinhuizhu.tutorial.java'
 sourceCompatibility = 1.8
-version '1.0-SNAPSHOT'
+version = '1.0-SNAPSHOT'
 
 repositories {
-    mavenCentral()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
 }
 
 dependencies {
