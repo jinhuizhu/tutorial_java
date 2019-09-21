@@ -13,6 +13,11 @@ repositories {
 }
 
 dependencies {
+    // Spring Boot
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
     // guava
     compile group: 'com.google.guava', name: 'guava', version: '25.1-jre'
 
