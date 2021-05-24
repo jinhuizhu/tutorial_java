@@ -4,20 +4,17 @@ import io.micrometer.core.instrument.util.StringUtils;
 
 import java.util.Stack;
 
-public class StringHelper {
+public class SymmetricString {
     /**
-     * Test whether the given string is symmetric or not.
+     * Test whether the given string is symmetric or not. Blank strings and single-char strings are symmetric.
      * @param s
      * @return
      */
     public static boolean isSymmetric(String s) {
-        if (StringUtils.isBlank(s)) {
+        if (StringUtils.isBlank(s) || s.length() == 1) {
             return true;
         }
         int length = s.length();
-        if (length == 1) {
-            return true;
-        }
 
         Stack<Character> firstHalf = new Stack<>();
         Stack<Character> secondHalf = new Stack<>();

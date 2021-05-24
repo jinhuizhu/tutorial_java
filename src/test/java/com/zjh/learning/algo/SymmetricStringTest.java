@@ -8,20 +8,20 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DisplayName("Algo - SymmetricString")
-public class StringHelperTest {
+public class SymmetricStringTest {
 
     @Test
     @DisplayName("Blank string is symmetric.")
     public void test1() {
-        assertTrue(StringHelper.isSymmetric(null));
-        assertTrue(StringHelper.isSymmetric(""));
-        assertTrue(StringHelper.isSymmetric("  "));
+        assertTrue(SymmetricString.isSymmetric(null));
+        assertTrue(SymmetricString.isSymmetric(""));
+        assertTrue(SymmetricString.isSymmetric("  "));
     }
 
     @Test
     @DisplayName("Single char string is symmetric.")
     public void test2() {
-        assertTrue(StringHelper.isSymmetric("a"));
+        assertTrue(SymmetricString.isSymmetric("a"));
     }
 
     @Nested
@@ -30,37 +30,37 @@ public class StringHelperTest {
         @Test
         @DisplayName("aa - true")
         public void test3() {
-            assertTrue(StringHelper.isSymmetric("aa"));
+            assertTrue(SymmetricString.isSymmetric("aa"));
         }
 
         @Test
         @DisplayName("ab - false")
         public void test4() {
-            assertFalse(StringHelper.isSymmetric("ab"));
+            assertFalse(SymmetricString.isSymmetric("ab"));
         }
 
         @Test
         @DisplayName("abba - true")
         public void test5() {
-            assertTrue(StringHelper.isSymmetric("abba"));
+            assertTrue(SymmetricString.isSymmetric("abba"));
         }
 
         @Test
         @DisplayName("abcba - true")
         public void test6() {
-            assertTrue(StringHelper.isSymmetric("abcba"));
+            assertTrue(SymmetricString.isSymmetric("abcba"));
         }
 
         @Test
         @DisplayName("abccba - true")
         public void test7() {
-            assertTrue(StringHelper.isSymmetric("abccba"));
+            assertTrue(SymmetricString.isSymmetric("abccba"));
         }
 
         @Test
         @DisplayName("abccbac - false")
         public void test8() {
-            assertFalse(StringHelper.isSymmetric("abccbac"));
+            assertFalse(SymmetricString.isSymmetric("abccbac"));
         }
     }
 }
