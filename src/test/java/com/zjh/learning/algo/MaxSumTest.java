@@ -49,7 +49,7 @@ public class MaxSumTest {
             }
 
             @Test
-            @DisplayName("[2, 13, 18, 10] = ")
+            @DisplayName("[2, 13, 18, 10] = 23")
             public void test5() {
                 assertEquals(23, MaxSum.maxSumRecursive(new int[]{2, 13, 18, 10}));
             }

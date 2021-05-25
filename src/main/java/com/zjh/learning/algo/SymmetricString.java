@@ -1,6 +1,7 @@
 package com.zjh.learning.algo;
 
 import io.micrometer.core.instrument.util.StringUtils;
+import org.apache.logging.log4j.util.Strings;
 
 import java.util.Stack;
 
@@ -11,7 +12,7 @@ public class SymmetricString {
      * @return
      */
     public static boolean isSymmetric(String s) {
-        if (StringUtils.isBlank(s) || s.length() == 1) {
+        if (Strings.isBlank(s) || s.length() == 1) {
             return true;
         }
         int length = s.length();
