@@ -22,6 +22,7 @@ public class BalancingBracesTest {
     @DisplayName("If a string doesn't contain braces, then it's balanced.")
     public void test2() {
         assertTrue(BalancingBrace.hasBalancingBraces("abc"));
+        assertTrue(BalancingBrace.hasBalancingBraces("abc + zyx"));
     }
 
     @Nested

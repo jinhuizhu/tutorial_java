@@ -3,8 +3,6 @@ package com.zjh.learning.algo;
 import java.util.Arrays;
 
 public class MaxSum {
-
-
     /**
      * Get the max possible sum of all elements, with restriction:   can't take two elements next to each other.
      * Using recursive solution.
