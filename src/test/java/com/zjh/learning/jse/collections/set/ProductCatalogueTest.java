@@ -4,8 +4,8 @@ package com.zjh.learning.jse.collections.set;
 import org.junit.jupiter.api.Test;
 
 import static com.zjh.learning.jse.collections.ProductFixtures.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.junit.Assert.assertThat;
 
 /**
  * Created by jinhui on 10/9/2016.

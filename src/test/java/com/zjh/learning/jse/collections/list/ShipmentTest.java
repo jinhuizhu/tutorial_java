@@ -4,14 +4,14 @@ package com.zjh.learning.jse.collections.list;
 import org.junit.jupiter.api.Test;
 
 import static com.zjh.learning.jse.collections.ProductFixtures.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
-import static org.junit.Assert.assertThat;
 
 /**
  * Created by jinhui on 10/9/2016.
  */
 public class ShipmentTest {
-    private Shipment shipment = new Shipment();
+    private final Shipment shipment = new Shipment();
 
     @Test
     public void shouldAddItems() {

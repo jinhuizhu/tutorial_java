@@ -3,13 +3,14 @@ package com.zjh.learning.jse.collections.queue.deque;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 /**
  * Created by jinhui on 10/10/2016.
  */
 public class CalculatorTest {
-    private Calculator calculator = new Calculator();
+    private final Calculator calculator = new Calculator();
 
     @Test
     public void shouldEvaluateConstants() {

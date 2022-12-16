@@ -22,7 +22,7 @@ public class BoundedTypeParameter<T> {
 
     public static void main(String[] args) {
         BoundedTypeParameter<Integer> integerBox = new BoundedTypeParameter<>();
-        integerBox.set(new Integer(10));
+        integerBox.set(10);
 //        integerBox.inspect("some text"); // error: this is still String!
     }
 }
